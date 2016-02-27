@@ -14,6 +14,7 @@ import com.mapbox.mapboxsdk.views.MapView;
 public class MainActivity extends AppCompatActivity {
 
     private MapView mapView = null;
+    private String styleURL = "mapbox://styles/subashsn/cil3yl0v4006jcbj6gxprjhcv" ;
 
     @Override
     protected void onStop() {
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 .title("Mark Benson")
                 .snippet("Updated 13hours ago."));
 
-        mapView.setStyleUrl(Style.DARK);
+        mapView.setStyleUrl(styleURL);
 
     }
 }
